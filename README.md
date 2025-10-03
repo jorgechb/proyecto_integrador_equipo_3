@@ -1,3 +1,13 @@
+# Proyecto Integrador
+
+## Equipo 3:
+
+- Jorge Chávez Badillo A01749448  
+- Andrea Fernanda Molina Blandón A00827133  
+- Ismael Alexander Carvajal González A01793925
+
+---
+
 # Avance1.#Equipo — Análisis Exploratorio de Datos (EDA)
 
 Este repositorio contiene el *Avance 1* del proyecto: **EDA + preprocesamiento** sobre el histórico de **casos de prueba** del proyecto Cotizaciones/Pedidos.
@@ -22,4 +32,9 @@ Este repositorio contiene el *Avance 1* del proyecto: **EDA + preprocesamiento**
 
 ## Ejecución
 ```bash
+
 python notebooks/EDA_TestCases_MVP.py
+
+---
+
+# Avance 2. Ingeniería de características
