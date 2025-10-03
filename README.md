@@ -8,7 +8,7 @@
 
 ---
 
-# Avance1.#Equipo — Análisis Exploratorio de Datos (EDA)
+# Avance1. Análisis Exploratorio de Datos (EDA)
 
 Este repositorio contiene el *Avance 1* del proyecto: **EDA + preprocesamiento** sobre el histórico de **casos de prueba** del proyecto Cotizaciones/Pedidos.
 
@@ -43,6 +43,7 @@ python notebooks/EDA_TestCases_MVP.py
 ---
 
 # Avance 2. Ingeniería de características
+
 
 
 
