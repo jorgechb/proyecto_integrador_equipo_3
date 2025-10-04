@@ -13,24 +13,6 @@ texto de casos de prueba, 2) archivos modificados del PR, 3) metadatos del pipel
 Tras revisión con IBM, el proyecto se centra en RTS (y opcionalmente un asistente de PR en fases futuras).
 El EDA se reduce a lo esencial para alimentar el RTS y acelerar la ejecución.
 
-## Estructura del repositorio
-.
-├─ notebooks/
-│  └─ EDA_TestCases_MVP.py        # Script ejecutable (sin Jupyter)
-├─ data/
-│  ├─ raw/
-│  │  ├─ TestCases.csv            # Casos de prueba (texto + metadatos)
-│  │  ├─ ChangedFiles.csv         # Archivos tocados por PR 
-│  │  └─ PipelineMeta.csv         # Metadatos del PR/CI
-│  └─ processed/
-│     ├─ TestCases_clean_features.csv
-│     ├─ RTS_selected_PR-*.csv    # Seleccionados por PR (salida)
-│     ├─ RTS_selected_all_*.csv   # Seleccionados de todos los PR (reporte final)
-│     └─ RTS_report_*.xlsx        # (opcional) Reporte Excel si hay openpyxl
-└─ run_artifacts/
-   ├─ RUN_OK.txt
-   └─ run_report.json             # Evidencias y hashes de entrada
-
 ## Contenido principal
 
 notebooks/EDA_TestCases_MVP.py
@@ -189,3 +171,4 @@ Integración con Watson Discovery (RAG) para enriquecer pr_text con contexto doc
 Equipo 3 — Proyecto Integrador (Castor, metalurgia para construcción).
 
 RTS MVP implementado con enfoque QA/IA, priorizando eficiencia, consistencia y extensibilidad.
+
