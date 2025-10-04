@@ -20,8 +20,8 @@ El EDA se reduce a lo esencial para alimentar el RTS y acelerar la ejecución.
 ├─ data/
 │  ├─ raw/
 │  │  ├─ TestCases.csv            # Casos de prueba (texto + metadatos)
-│  │  ├─ ChangedFiles.csv         # Archivos tocados por PR (ver esquema)
-│  │  └─ PipelineMeta.csv         # Metadatos del PR/CI (ver esquema)
+│  │  ├─ ChangedFiles.csv         # Archivos tocados por PR 
+│  │  └─ PipelineMeta.csv         # Metadatos del PR/CI
 │  └─ processed/
 │     ├─ TestCases_clean_features.csv
 │     ├─ RTS_selected_PR-*.csv    # Seleccionados por PR (salida)
@@ -187,4 +187,5 @@ Integración con Watson Discovery (RAG) para enriquecer pr_text con contexto doc
 ## Créditos
 
 Equipo 3 — Proyecto Integrador (Castor, metalurgia para construcción).
+
 RTS MVP implementado con enfoque QA/IA, priorizando eficiencia, consistencia y extensibilidad.
