@@ -1,0 +1,4 @@
+pr_id,pr_title,pr_desc,author,branch,commit_count,changed_files,ci_provider,service_affected,weekday,time_of_day,has_db_migration,severity_declared,test_history_fail_rate,build_id
+PR-1001,Ajuste cálculo de precios por IVA diferenciado,Se corrige el cálculo de impuestos para cotizaciones con IVA y exentos; se optimiza PriceTable.,dlopez,feature/iva-diff,2,3,GitHubActions,pricing,Fri,10:30,no,normal,0.12,build-781
+PR-1002,Fix validación de clientes al crear pedido,Se agrega validación estricta y se crea índice de base de datos para mejorar performance.,mjimenez,hotfix/pedidos-validator,2,3,GitHubActions,orders,Mon,14:12,yes,critical,0.35,build-802
+PR-1003,Optimización de búsqueda de clientes,Se mejora la búsqueda por RNC y nombre y se refactoriza el repositorio.,acardenas,feature/search-clientes,1,2,Jenkins,clients,Wed,09:05,no,normal,0.07,build-820

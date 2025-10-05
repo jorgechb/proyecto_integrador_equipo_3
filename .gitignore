@@ -6,8 +6,7 @@ venv/
 __pycache__/
 *.pyc
 *.pyo
-# Data (ajusta según políticas)
-data/raw/*
+# Data
 data/processed/*
 !data/.gitkeep
 # OS

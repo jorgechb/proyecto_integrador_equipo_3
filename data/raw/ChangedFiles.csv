@@ -1,0 +1,9 @@
+pr_id,commit_id,file_path,file_type,lines_added,lines_deleted,component,module,risk_tag
+PR-1001,c1,services/precios/taxes.py,py,120,30,precios,cotizaciones,normal
+PR-1001,c1,api/cotizaciones/endpoints.py,py,40,10,api,cotizaciones,normal
+PR-1001,c2,ui/cotizaciones/PriceTable.vue,vue,80,15,frontend,cotizaciones,normal
+PR-1002,c3,services/pedidos/validator.py,py,60,20,pedidos,pedidos,high
+PR-1002,c3,db/migrations/2025_01_05_add_idx_client.sql,sql,10,0,db,pedidos,high
+PR-1002,c4,ui/pedidos/CreateOrder.tsx,tsx,45,18,frontend,pedidos,high
+PR-1003,c5,ui/clientes/SearchBar.tsx,tsx,20,5,frontend,clientes,low
+PR-1003,c5,services/clientes/repository.ts,ts,25,12,clientes,clientes,low
