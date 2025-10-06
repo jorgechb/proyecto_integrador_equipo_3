@@ -1,5 +1,8 @@
 # Proyecto: Servicio de calidad aumentrada por inteligencia artificial.
 
+Propuesta de proyecto para la empresa Castor, específicamente enfocada en el área de metalurgia para construcción.
+El proyecto propone la implementación de un RTS (Regression Test Selection) como MVP (Minimum Viable Product) con un enfoque en QA (Quality Assurance) y IA (Inteligencia Artificial), priorizando la eficiencia, consistencia y extensibilidad del proceso.
+
 ## Equipo 3:
 
 - Jorge Chávez Badillo A01749448
@@ -189,8 +192,3 @@ Cobertura mínima por módulo impactado (“al menos 1 caso” por módulo tocad
 Feedback loop (futuro): resultados de ejecución → reajuste de pesos/umbral.
 
 Integración con Watson Discovery (RAG) para enriquecer pr_text con contexto documental.
-
-## Créditos
-
-Equipo 3 — Proyecto Integrador (Castor, metalurgia para construcción).
-RTS MVP implementado con enfoque QA/IA, priorizando eficiencia, consistencia y extensibilidad.
