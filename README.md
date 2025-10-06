@@ -8,11 +8,11 @@
 
 ## Tabla de avances:
 
-| **Nombre del avance** | **Descripción**                                                            | **Link al recurso de avance**              |
-| --------------------- | -------------------------------------------------------------------------- | ------------------------------------------ |
-| Avance 0              | Breve descripción del avance 1.                                            | [Ver avance](https://link-al-avance-1.com) |
-| Avance 1              | EDA y preprocesamiento de casos de prueba. Regression Test Selection (RTS) | [Ver avance](https://link-al-avance-2.com) |
-| Avance 2              | Breve descripción del avance 3.                                            | [Ver avance](https://link-al-avance-3.com) |
+| **Nombre del avance** | **Descripción**                                                            | **Link al recurso de avance**                                                                                      |
+| --------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Avance 0              | Breve descripción del avance 1.                                            | [Ver avance](https://link-al-avance-1.com)                                                                         |
+| Avance 1              | EDA y preprocesamiento de casos de prueba. Regression Test Selection (RTS) | [Ver avance](https://github.com/jorgechb/proyecto_integrador_equipo_3/blob/main/notebooks/Notebook_Avance_1.ipynb) |
+| Avance 2              | Breve descripción del avance 3.                                            | [Ver avance](https://github.com/jorgechb/proyecto_integrador_equipo_3/blob/main/notebooks/Notebook_Avance_2.ipynb) |
 
 ## Contexto del ptoyecto y alcance
 
