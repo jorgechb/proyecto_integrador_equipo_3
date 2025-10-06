@@ -1,35 +1,42 @@
-# Avance 1 — EDA compacto + RTS (MVP)
+# Proyecto: Servicio de calidad aumentrada por inteligencia artificial.
 
-Repositorio del Avance 1 con:
+## Equipo 3:
 
-EDA y preprocesamiento de casos de prueba.
+- Jorge Chávez Badillo A01749448
+- Andrea Fernanda Molina Blandón A00827133
+- Ismael Alexander Carvajal González A01793925
 
-RTS (Regression Test Selection) mínimo viable usando:
+## Tabla de avances:
 
-texto de casos de prueba, 2) archivos modificados del PR, 3) metadatos del pipeline/PR.
+| **Nombre del avance** | **Descripción**                                                            | **Link al recurso de avance**              |
+| --------------------- | -------------------------------------------------------------------------- | ------------------------------------------ |
+| Avance 0              | Breve descripción del avance 1.                                            | [Ver avance](https://link-al-avance-1.com) |
+| Avance 1              | EDA y preprocesamiento de casos de prueba. Regression Test Selection (RTS) | [Ver avance](https://link-al-avance-2.com) |
+| Avance 2              | Breve descripción del avance 3.                                            | [Ver avance](https://link-al-avance-3.com) |
 
-## Contexto y alcance
+## Contexto del ptoyecto y alcance
 
 Tras revisión con IBM, el proyecto se centra en RTS (y opcionalmente un asistente de PR en fases futuras).
 El EDA se reduce a lo esencial para alimentar el RTS y acelerar la ejecución.
 
 ## Estructura del repositorio
+
 .
 ├─ notebooks/
-│  └─ EDA_TestCases_MVP.py        # Script ejecutable (sin Jupyter)
+│ └─ EDA*TestCases_MVP.py # Script ejecutable (sin Jupyter)
 ├─ data/
-│  ├─ raw/
-│  │  ├─ TestCases.csv            # Casos de prueba (texto + metadatos)
-│  │  ├─ ChangedFiles.csv         # Archivos tocados por PR (ver esquema)
-│  │  └─ PipelineMeta.csv         # Metadatos del PR/CI (ver esquema)
-│  └─ processed/
-│     ├─ TestCases_clean_features.csv
-│     ├─ RTS_selected_PR-*.csv    # Seleccionados por PR (salida)
-│     ├─ RTS_selected_all_*.csv   # Seleccionados de todos los PR (reporte final)
-│     └─ RTS_report_*.xlsx        # (opcional) Reporte Excel si hay openpyxl
+│ ├─ raw/
+│ │ ├─ TestCases.csv # Casos de prueba (texto + metadatos)
+│ │ ├─ ChangedFiles.csv # Archivos tocados por PR (ver esquema)
+│ │ └─ PipelineMeta.csv # Metadatos del PR/CI (ver esquema)
+│ └─ processed/
+│ ├─ TestCases_clean_features.csv
+│ ├─ RTS_selected_PR-\*.csv # Seleccionados por PR (salida)
+│ ├─ RTS_selected_all*_.csv # Seleccionados de todos los PR (reporte final)
+│ └─ RTS*report*_.xlsx # (opcional) Reporte Excel si hay openpyxl
 └─ run_artifacts/
-   ├─ RUN_OK.txt
-   └─ run_report.json             # Evidencias y hashes de entrada
+├─ RUN_OK.txt
+└─ run_report.json # Evidencias y hashes de entrada
 
 ## Contenido principal
 
@@ -67,23 +74,19 @@ total_lines_changed = lines_added + lines_deleted por PR.
 
 RTS score por PR:
 
-rts_score = 0.6 * text_sim
-          + 0.2 * module_match
-          + 0.1 * risk
-          + 0.1 * change_size
-
+rts*score = 0.6 * text*sim + 0.2 * module*match + 0.1 * risk + 0.1 \_ change_size
 
 risk +0.2 si has_db_migration = yes.
 
 change_size = min(1, total_lines_changed / 300).
 
-Selección top-k con k = min(len, max(5, round(fraction*len))).
+Selección top-k con k = min(len, max(5, round(fraction\*len))).
 
 ## Salidas:
 
 data/processed/RTS_selected_PR-<ID>.csv (por PR).
 
-Reporte final: RTS_selected_all_*.csv y (si hay openpyxl) RTS_report_*.xlsx.
+Reporte final: RTS*selected_all*_.csv y (si hay openpyxl) RTS*report*_.xlsx.
 
 Evidencias: run_artifacts/run_report.json (hashes, shape, etc.).
 
@@ -93,18 +96,17 @@ Clase Config centralizada:
 
 @dataclass
 class Config:
-    RAW_TESTS = Path("../data/raw/TestCases.csv")
-    RAW_CHANGED = Path("../data/raw/ChangedFiles.csv")
-    RAW_META = Path("../data/raw/PipelineMeta.csv")
-    OUT_DIR = Path("../data/processed")
-    RUN_DIR = Path("../run_artifacts")
-    MAKE_PLOTS = True
-    USE_SVD = False             # RTS no lo requiere (más rápido/ligero)
-    TOP_FRACTION = 0.15         # % de casos a seleccionar por PR
-    TFIDF_MAX_FEATURES = 6000
-    LINES_NORM = 300            # normalizador del tamaño del cambio
-    W_SIM, W_MODULE, W_RISK, W_SIZE = 0.6, 0.2, 0.1, 0.1
-
+RAW_TESTS = Path("../data/raw/TestCases.csv")
+RAW_CHANGED = Path("../data/raw/ChangedFiles.csv")
+RAW_META = Path("../data/raw/PipelineMeta.csv")
+OUT_DIR = Path("../data/processed")
+RUN_DIR = Path("../run_artifacts")
+MAKE_PLOTS = True
+USE_SVD = False # RTS no lo requiere (más rápido/ligero)
+TOP_FRACTION = 0.15 # % de casos a seleccionar por PR
+TFIDF_MAX_FEATURES = 6000
+LINES_NORM = 300 # normalizador del tamaño del cambio
+W_SIM, W_MODULE, W_RISK, W_SIZE = 0.6, 0.2, 0.1, 0.1
 
 Para PR críticos o con migración de DB, puedes subir TOP_FRACTION a 0.25–0.30.
 
@@ -115,7 +117,9 @@ Python ≥ 3.9
 Instalar dependencias:
 
 pip install -r requirements.txt
+
 # (opcional para Excel)
+
 pip install openpyxl
 
 Ejecución
@@ -127,10 +131,12 @@ En notebook/Jupyter
 Ejecuta todas las celdas y, al final, corre el reporte:
 
 # Para todos los PR detectados
+
 initial_cases, selected_cases, summary_by_pr, not_selected = build_rts_report()
 
 # O para un PR concreto y con más cobertura (p.ej., crítico)
-_ = build_rts_report(pr_ids=["PR-1002"], top_frac=0.30)
+
+\_ = build_rts_report(pr_ids=["PR-1002"], top_frac=0.30)
 
 Visualizaciones
 
