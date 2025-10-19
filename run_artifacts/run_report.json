@@ -1,10 +1,10 @@
 {
-  "timestamp_utc": "2025-10-13T00:37:42Z",
-  "python": "3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]",
-  "platform": "macOS-26.0.1-arm64-arm-64bit",
-  "raw_sha256": "53e0138609056d9e125f09cce7129880fc4768bba44899dd54ad726633835b2f",
-  "changed_sha256": "f397ec2ef091dbbabe77e5d9806935d30c55e16145df356e5c18a1dc0c82949b",
-  "meta_sha256": "c9bfd735f70a23c836969330be6be6b403067ba5190a77567051dea97bd6895f",
+  "timestamp_utc": "2025-10-19T23:04:27Z",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "raw_sha256": "d880aebf9d60d4679e33060d27242f2e4938acbf64033e86c2ca1d847ccb25a7",
+  "changed_sha256": "97e21ad65edeab0ef84ba5bd7b0feb123b0458f174be1db8778123c227d59b71",
+  "meta_sha256": "3a59f8b2d925fdeff169dcd0f3ed5e240c7b61120c1b3943e78568439187973d",
   "processed_exists": true,
   "df_shape": [
     288,
