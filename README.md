@@ -17,6 +17,7 @@ El proyecto propone la implementación de un RTS (Regression Test Selection) com
 | Avance 1              | EDA y preprocesamiento de casos de prueba. Regression Test Selection (RTS) | [Ver avance](https://github.com/jorgechb/proyecto_integrador_equipo_3/blob/main/notebooks/Notebook_Avance_1.ipynb) |
 | Avance 2              | Ingeniería de características                                              | [Ver avance](https://github.com/jorgechb/proyecto_integrador_equipo_3/blob/main/notebooks/Notebook_Avance_2.ipynb) |
 | Avance 3              | Baseline                                                                   | [Ver avance](https://github.com/jorgechb/proyecto_integrador_equipo_3/blob/main/notebooks/Notebook_Avance_3.ipynb) |
+| Avance 4              | Modelos Alternativos                                                       | [Ver avance](https://github.com/jorgechb/proyecto_integrador_equipo_3/blob/main/notebooks/Notebook_Avance_4.ipynb) |
 
 ## Contexto del ptoyecto y alcance
 
